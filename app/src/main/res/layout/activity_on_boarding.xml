@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondary_dark"
+    tools:context=".OnBoarding"
+    android:padding="20dp">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/skip_btn"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:background="@color/secondary_dark"
+        android:stateListAnimator="@null"
+        android:text="@string/skip_btn"
+        android:textColor="@color/dark_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/get_started_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/primary_btn_round"
+            android:text="@string/lets_get_started_btn"
+            android:textColor="@color/primary_dark"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="20dp"
+            android:orientation="horizontal"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/secondary_dark"
+            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:drawableTint="@color/primary_button"
+            android:paddingBottom="30dp"
+            android:stateListAnimator="@null" />
+
+        <TextView
+            android:id="@+id/onboarding_login_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/get_started_btn"
+            android:textSize="16dp"
+            android:textColor="@color/dark_gray"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/login_txt"
+            android:visibility="invisible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_btn"
+            android:layout_width="69dp"
+            android:layout_height="32dp"
+            android:layout_below="@id/get_started_btn"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/onboarding_login_txt"
+            android:background="@color/secondary_dark"
+            android:stateListAnimator="@null"
+            android:text="@string/login_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/primary_button"
+            android:textSize="16dp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

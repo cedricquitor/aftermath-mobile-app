@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/primary_dark"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/brainstorming_illustration"/>
+
+    <TextView
+        android:id="@+id/login_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oswald_medium"
+        android:gravity="center"
+        android:text="@string/login_heading_txt"
+        android:textAllCaps="true"
+        android:textColor="@color/primary_color"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_heading"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/dark_gray"
+        android:hint="@string/username_hint"
+        android:textColor="@color/primary_color"
+        android:textColorHint="@color/dark_gray"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password_hint"
+        android:layout_below="@id/login_username"
+        android:textColorHint="@color/dark_gray"
+        android:backgroundTint="@color/dark_gray"
+        android:textColor="@color/primary_color"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/primary_btn_round"
+        android:text="@string/login_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/light_gray"
+        android:textSize="20sp" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="secondary_dark">#2D3644</color>
+    <color name="primary_dark">#1B1F23</color>
+    <color name="primary_color">#EACF56</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="dark_gray">#929A9E</color>
+    <color name="gray_accent">#B9BDB3</color>
+
+    <!--Color for Button Styles-->
+    <color name="primary_button">#BFA014</color>
+
+    <!--Color for Tab and Screen Text-->
+    <color name="tab_indicator">#c0c0c0</color>
+</resources>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Aftermath</string>
+    <!--Onboarding Strings-->
+    <string name="first_slide_title">MORE THAN JUST A GAME</string>
+    <string name="second_slide_title">CELEBRATE VICTORIES</string>
+    <string name="third_slide_title">CONNECT WITH OTHER FANS</string>
+    <string name="fourth_slide_title">BE UPDATED ALWAYS</string>
+    <string name="first_slide_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Accumsan morbi dolor porta accumsan, id sapien vitae.
+Tempus scelerisque posuere ornare faucibus.</string>
+    <string name="second_slide_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Accumsan morbi dolor porta accumsan, id sapien vitae.
+Tempus scelerisque posuere ornare faucibus.</string>
+    <string name="third_slide_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Accumsan morbi dolor porta accumsan, id sapien vitae.
+Tempus scelerisque posuere ornare faucibus.</string>
+    <string name="fourth_slide_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Accumsan morbi dolor porta accumsan, id sapien vitae.
+Tempus scelerisque posuere ornare faucibus.</string>
+    <string name="skip_btn">Skip</string>
+    <string name="login_txt">Already have an account?</string>
+    <string name="login_btn">Login</string>
+    <string name="lets_get_started_btn">Lets Get Started</string>
+    <string name="signup_btn">Sign Up</string>
+    <string name="back_btn">Back to Login Page</string>
+    <string name="email_hint"> Email Address</string>
+    <string name="fname_hint">First Name</string>
+    <string name="lname_hint">Last Name</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="repassword_hint">Re-enter Password</string>
+    <string name="profile_email_txt">Email Address</string>
+    <string name="profile_name_txt">Name</string>
+    <string name="profile_username_txt">Username</string>
+    <string name="profile_logout_btn">Logout</string>
+    <string name="register_heading_txt">Join the Squad</string>
+    <string name="login_heading_txt">Login</string>
+
+    <!-- News Strings -->
+    <!-- VALORANT News -->
+    <string name="vlr_first_news_title">100 Thieves transfer steel</string>
+    <string name="vlr_second_news_title">Fnatic triumph over Cloud9 in Champions opening day</string>
+    <string name="vlr_third_news_title">X10 CRIT bring new identity and revitalized spirit to Berlin</string>
+    <string name="vlr_fourth_news_title">Sentinels look to cement legacy</string>
+    <string name="vlr_fifth_news_title">Acend unfazed by competition at Champions</string>
+    <string name="vlr_sixth_news_title">Team Secret thirst for competition at Berlin</string>
+
+    <!-- League of Legends News -->
+    <string name="lol_first_news_title">G2 Esports secures their 2022 roster ahead of the new season</string>
+    <string name="lol_second_news_title">DWG.KIA finalise their 2022 roster with ShowMaker and Canyon returning</string>
+    <string name="lol_third_news_title">Team Liquid makes three changes to its starting lineup</string>
+    <string name="lol_fourth_news_title">Arcane Act II review, thoughts, what can we expect from Act III?</string>
+    <string name="lol_fifth_news_title">Doinb is the latest to leave FunPlus Phoenix</string>
+    <string name="lol_sixth_news_title">Riot Games is going all out for the finale act of Arcane with Undercity Nights</string>
+</resources>

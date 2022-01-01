@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/news_card"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        app:cardBackgroundColor="@color/primary_dark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/news_img_card"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                app:cardCornerRadius="16dp">
+
+                <ImageView
+                    android:id="@+id/news_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/vlr_news_first_img" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/news_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+
+                android:layout_toRightOf="@id/news_img_card"
+                android:text="Time ago"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/news_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/news_date_txt"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/news_img_card"
+                android:text="The title of the news article will be placed here"
+                android:textColor="@color/light_gray"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

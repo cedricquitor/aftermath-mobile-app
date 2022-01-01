@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark"
+    android:paddingBottom="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    tools:context=".LeagueActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/home_btn"
+        android:layout_width="152dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/icon_wbrand" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/user_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/avatar_icon"
+        android:backgroundTint="@color/dark_gray" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_botnav"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_items" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/lol_matches_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_below="@id/home_btn"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lol_news_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_below="@id/lol_matches_viewpager"
+        android:layout_marginTop="14dp" />
+</RelativeLayout>
